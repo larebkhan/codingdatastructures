@@ -1,6 +1,4 @@
-// Java program to put all negative
-// numbers before positive numbers
-import java.io.*;
+
  
 class negseger{
  
