@@ -2,7 +2,7 @@
     import java.io.*;
     import java.util.*;
     
-    class GFG {
+    class mergearr {
         // Driver code
         public static void main(String[] args) throws Exception {
             BufferedReader br =
