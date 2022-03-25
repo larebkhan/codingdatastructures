@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Compute {
     
     public static void rotate(int arr[], int n)

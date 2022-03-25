@@ -72,6 +72,6 @@ class union {
             System.out.println(k[y]);
         }
 
-
+        sc.close();
     }
 }

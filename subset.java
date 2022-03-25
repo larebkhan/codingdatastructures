@@ -1,5 +1,3 @@
-
-import java.io.*;
 import java.util.*;
 
 public class subset{
@@ -30,6 +28,7 @@ public static void main(String[] args) throws Exception {
         }
         System.out.println(set);
     }
+    sc.close();
   //ite your code here
  }
 
