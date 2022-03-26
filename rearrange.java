@@ -1,6 +1,6 @@
 import java.util.*;
 class rearrange{
-    public static int[] main(String[] args){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
@@ -9,7 +9,7 @@ class rearrange{
         }
         arrange(arr,n);
         sc.close();
-        return arr;
+        return;
     }
     public static void arrange(int[]arr ,int n){
         List <Integer> la = new ArrayList<>();
@@ -26,7 +26,7 @@ class rearrange{
         }
         int m = la.size();
         int j = li.size();
-        /*for(;s<m;s++){
+        for(;s<m;s++){
             System.out.print(la.get(s)+" ");
             if(s>=j||s>=m)
             break;
@@ -40,8 +40,8 @@ class rearrange{
             for(int i=s+1;i<m;i++){
                 System.out.print(la.get(i)+" ");
             }
-        }*/
-        for(;u<=m&&u<=j;u++){
+        }
+        /*for(;u<=m&&u<=j;u++){
             if(u%2==0){
                 arr[u]=la.get(f);
                 f++;
@@ -58,6 +58,6 @@ class rearrange{
             for(int i=u+1;u<m;u++){
                 arr[i]=la.get(i);
             }
-        }
+        }*/
     }
 }
