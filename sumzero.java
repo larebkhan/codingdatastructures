@@ -39,7 +39,7 @@ class sumzero {
 
 class Solution{
     //Function to check whether there is a subarray present with 0-sum or not.
-    static boolean findsum(int arr[],int n)
+    boolean findsum(int arr[],int n)
     {
         //Your code here
         
