@@ -7,30 +7,71 @@ class nbythree{
         for(int i=0;i<n;i++){
             arr[i]=in.nextInt();
         }
-        nthree(arr,n);
+        System.out.print(nthree(arr,n));
         in.close();
 
     }
-    public static void nthree(int []arr,int n){
-        ArrayList <Integer> li = new ArrayList<>();
-        Arrays.sort(arr);
+    public static List<Integer> nthree(int []arr,int n){
+        List <Integer> li =new ArrayList<>();
+        if(n==2){
+            li.add(arr[0]);
+            li.add(arr[1]);
+            return li;
+        }
+        int c=1;
         int count=0;
-        for(int i=0;i<n-1;i++){
-            if(arr[i]==arr[i+1]){
-                count++;
-            }
-            if(count>(n/3)){
-                li.add(arr[i]);
-            }
-            if(arr[i]!=arr[i+1]){
-                count=0;
+        int ansind =0;
+        for(int i=1;i<n;i++){
+            if(arr[i]==arr[ansind]){
+                c++;
+            }else{
+                c--;
+            }if(c==0){
+                c=1;
+                ansind = i;
             }
 
         }
         for(int i=0;i<n;i++){
-            System.out.println(li.get(i));
+            if(arr[ansind]==arr[i]){
+                count++;
+            }
         }
+        if(count>(n/3)){
 
+            li.add(arr[ansind]);
+        }
+        if(n>3){
+        int c1=1;
+        int count1=0;
+        int ansind1=0;
+        int d = arr[ansind];
+        for(int i=1;i<n;i++){
+            if(arr[i]==d)
+            continue;
+            if(arr[i]==arr[ansind1]){
+
+                c1++;
+            }else{
+                c1--;
+            }if(c1==0){
+                c1=1;
+                ansind = i;
+            }
+
+        }
+        for(int i=0;i<n;i++){
+            if(arr[ansind1]==arr[i]){
+                count1++;
+            }
+        }
+        if(count1>(n/3)){
+
+            li.add(arr[ansind1]);
+        }
+        
 
     }
+    return li;
+}
 }
