@@ -15,7 +15,6 @@ public class buysellstock2 {
     public static int maxProfit(int[] arr,int n) {
         int maxp = 0;
         int min=arr[0];
-        int p=0;
         List<Integer> li = new ArrayList<>();
         for(int i=1;i<n;i++){
             /*if(arr[i]<min){
@@ -24,7 +23,6 @@ public class buysellstock2 {
                 max=arr[i];
             }*/
             if(min<arr[i]){
-                p = arr[i]-min;
                 if(maxp<(arr[i]-min)){
                     maxp=arr[i]-min;
                     li.add(maxp);
