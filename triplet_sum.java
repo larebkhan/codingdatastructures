@@ -49,7 +49,6 @@
 import java.util.*;
 class triplet{
     public static List<Integer> sumtri(int[] arr,int n,int x){
-        int p=0;
         List<Integer> li = new ArrayList<>();
         Arrays.sort(arr);
         for(int z=0;z<n;z++){
