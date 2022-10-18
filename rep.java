@@ -10,6 +10,7 @@ public class rep {
         }
         
         System.out.println(reep(n,arr));
+        sc.close();
     }
     public static int reep(int n , int []arr){
         int mins = n;
