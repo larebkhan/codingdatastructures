@@ -5,28 +5,22 @@ public class printallsubsequences {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         String ip = sc.nextLine();
-        String op = " ";
-        solve(ip,op);
+        //String op = " ";
+        System.out.println(AllPossibleStrings(ip));
+        //System.out.println(ans);
         sc.close();
     }
+    public static List<String> AllPossibleStrings(String s)
+    {
+        // Code here
+        solve(s,"");
+        Collections.sort(ans);
+        return ans;
+    }
     public static void solve(String ip , String op){
-        // if(ip.isEmpty()){
-        //     System.out.print(op);
-        //     return;
-        // }
-        // ArrayList<Character> op1 = new ArrayList<>();
-        // op.addAll(op1);
-        
-        // ArrayList<Character> op2 = new ArrayList<>();
-        // op.addAll(op2);
-        // op2.add(ip.get(0));
-        // ip.remove(ip.get(0));
-        // solve(ip, op1);
-        // solve(ip,op2);
-        
         if(ip==""){
-            System.out.println(op);
-            return;
+            ans.add(op);
+            return ;
         }
         String op1 = op;
         String op2 = op;
