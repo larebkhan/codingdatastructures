@@ -23,6 +23,19 @@ public class balancedparenthesis {
             li.add(op);
             return;
         }
+        if(o!=0){
+            String op1 = op + "(";
+            int o1 = o-1;
+            balancing(o1,c,op1);
+        }
+        if(c>o){
+            String op2 = op + ")";
+            int c2 = c-1;
+            balancing(o,c2,op2);
+        }
+        return;
+    }
+}
         // if(o<c && o!=0){
         //     String op1 = op + "(";
         //     String op2 = op + ")";
@@ -36,15 +49,4 @@ public class balancedparenthesis {
         //     int o1 = o-1;
         //     balancing(o1,c,op1);
         // }
-        if(o!=0){
-            String op1 = op + "(";
-            int o1 = o-1;
-            balancing(o1,c,op1);
-        }
-        if(c>o){
-            String op2 = op + ")";
-            int c2 = c-1;
-            balancing(o,c2,op2);
-        }
-    }
-}
+        

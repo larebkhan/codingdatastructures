@@ -36,6 +36,7 @@ public class lettercasepermutation {
             op1 = op + ip.charAt(0);
             ip = ip.substring(1);
             letterperm(ip, op1, ans);
+        
         }
     }
 }
