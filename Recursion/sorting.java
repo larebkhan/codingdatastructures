@@ -27,13 +27,16 @@ public class sorting {
 
     }
     public static void insert(ArrayList<Integer> li,int temp){
-        if(li.size()==0  || li.get(li.size()-1)<=temp){
+        if(li.size()==0  || li.get(li.size()-1)<=temp){//as the second codition is necessary to insert anything in the list
+            System.out.println(temp);
             li.add(temp);
+
             return ;
         }
         int t = li.get(li.size()-1);
         li.remove(li.size()-1);
         insert(li,temp);
+        System.out.println(t);
         li.add(t);
         return;
 

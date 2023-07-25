@@ -18,7 +18,7 @@ public class josephusproblem {
             li.add(i+1);
         }
         //System.out.println(li);
-        int idx=0;
+        int idx=0; 
         k=k-1;
         solving(li,idx,k,ans);
         return ans;

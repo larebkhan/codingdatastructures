@@ -8,7 +8,7 @@ public class permutationwithspaces {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         //int n = s.length();
-        System.out.println(permutation(s));
+        System.out.println(permutation(s ));
         sc.close();
     }
     static ArrayList<String> permutation(String s){
