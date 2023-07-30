@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 import java.util.ArrayList;
 public class max_lecture7 {

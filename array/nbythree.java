@@ -1,3 +1,5 @@
+
+package array;
 import java.util.*;
 class nbythree{
     public static void main(String args[]){

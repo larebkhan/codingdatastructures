@@ -1,3 +1,5 @@
+
+package array;
 import java.util.*;
 class readrrange{
     public static void main(String[] args){

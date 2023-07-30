@@ -1,5 +1,6 @@
 // { Driver Code Starts
-import java.util.*;
+package array;
+	import java.util.*;
 class sumzero {
 	public static void main (String[] args) {
 		//code

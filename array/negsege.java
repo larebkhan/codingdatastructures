@@ -1,5 +1,5 @@
 
- 
+package array; 
 class negseger{
  
     static void rearrange(int arr[], int n)

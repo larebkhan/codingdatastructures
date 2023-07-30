@@ -1,3 +1,4 @@
+package slidingvariable;
 // package slidingvariable;
 // import java.util.*;
 // public class lastques {

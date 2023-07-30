@@ -1,3 +1,4 @@
+package array;
 
 class countzot {
     static void sort012(int a[], int arr_size)

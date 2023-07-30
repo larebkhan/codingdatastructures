@@ -1,4 +1,7 @@
+
+package array;
 import java.util.*;
+
 public class countnsay {
     public static String countndsay(int n){
         if(n==1)return "1";

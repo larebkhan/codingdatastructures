@@ -22,7 +22,30 @@ public class longestsubsequence {
         }
         return longestSubsequence(size, a,0,-1,dp); */
         //return solveTab(size,a);
-        return solveSpace(size,a);
+        return optimal(size,a);
+    }
+    static int optimal(int n , int[] a){
+        if(n==0){
+            return 0;
+        }
+        ArrayList<Integer> li = new ArrayList<Integer>();
+        li.add(a[0]);
+        for(int i=0;i<n;i++){
+            if(a[i]>li.get(li.size()-1)){
+                li.add(a[i]);
+            }else{
+                for(int j= 0; j < li.size(); j++) {
+                    if(a[i]<li.get(j)){
+                        li.set(j, a[i]);
+                        break;
+                    }else{
+                        continue;
+                    }
+                }
+            }
+        }
+        return li.size();
+        
     }
     static int solveSpace(int n,int[] a){
         int[] currRow = new int[n+1];

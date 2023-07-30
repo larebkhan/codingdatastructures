@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 public class ljkenf {
     public static void main(String args[]){

@@ -1,3 +1,4 @@
+package array;
 public class maxnmin {
         static class Pair {
             int min;

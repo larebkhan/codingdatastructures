@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 class abc {
     static long maxProduct(int[] arr, int n) {

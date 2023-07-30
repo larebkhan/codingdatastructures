@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 public class rotationstring {
     public static boolean areRotations(String str1,String str2){

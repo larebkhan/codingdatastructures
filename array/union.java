@@ -1,4 +1,5 @@
-import java.util.Scanner;
+
+package array;import java.util.Scanner;
 
 class union {
     public static void main (String[] args) {

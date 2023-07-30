@@ -1,3 +1,4 @@
+package array;
 class Main{ // yaha class ka naam main krna pada 
     public  static void   main (String [] args) {
         int arr[] = {1 , 2, 3 , -4 ,5 , 1 ,-3 , 4};

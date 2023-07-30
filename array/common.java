@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 class common{
     public static void commmon(int[] arr1,int[] arr2,int[] arr3){

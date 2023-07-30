@@ -1,3 +1,4 @@
+package array;
 class Compute {
     
     public static void rotate(int arr[], int n)

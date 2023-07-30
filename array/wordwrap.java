@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 public class wordwrap {
     public static List<Integer> permutation(int n,int[] a)

@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 public class splitbinary {
     public static int split(String str){

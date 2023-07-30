@@ -1,3 +1,4 @@
+package array;
 import java.util.*;
 public class maximizethesumofselected {
     public static void main(String [] args){

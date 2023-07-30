@@ -1,4 +1,5 @@
 package slidingvariable;
+
 import java.util.*;
 public class picktoys {
     public static void main(String [] args){

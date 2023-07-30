@@ -45,7 +45,7 @@
 
 
 
-
+package array;
 import java.util.*;
 class triplet{
     public static List<Integer> sumtri(int[] arr,int n,int x){

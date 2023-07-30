@@ -1,4 +1,4 @@
-
+package array;
 import java.util.Scanner;
 public class rep {
     public  static void main(String [] args){

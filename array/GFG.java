@@ -1,3 +1,4 @@
+package array;
 public class GFG {
     static void rvereseArray(int arr[],
                      int start, int end)
