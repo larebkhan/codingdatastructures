@@ -42,7 +42,7 @@ public class userinputbstlec1 {
         postorder(root.right);
         System.out.print(root.data+" ");
     }
-}// 2 4 7 6 -1 -1 -1 10 -1 -1 1 4 -1 -1 -1 
+} 
 class Node{
     Node left,right;
     int data;
